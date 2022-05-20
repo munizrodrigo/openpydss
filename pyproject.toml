@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "openpydss"
+version = "0.1.0"
+description = ""
+authors = ["Rodrigo Muniz <rodrigosilvamuniz@gmail.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "1.22.3"
+py-dss-interface = "^1.0.2"
+pendulum = "^2.1.2"
+jmespath = "^1.0.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^4.5.0"
+sphinx-rtd-theme = "^1.0.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
