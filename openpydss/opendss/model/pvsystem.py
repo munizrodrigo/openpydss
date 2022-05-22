@@ -1,0 +1,96 @@
+from openpydss.opendss.model.dssobject import DSSObject
+
+
+class PVSystem(DSSObject):
+    def __init__(
+            self,
+            phases="3",
+            bus1="pvsystem_1",
+            kv="12.47",
+            irradiance="1",
+            Pmpp="500",
+            pct_Pmpp="100",
+            Temperature="25",
+            pf="1",
+            conn="wye",
+            kvar="0",
+            kVA="500",
+            pct_Cutin="20",
+            pct_Cutout="20",
+            EffCurve="",
+            P_x_TCurve="",
+            pct_R="50",
+            pct_X="0",
+            model="1",
+            Vminpu="0.9",
+            Vmaxpu="1.1",
+            Balanced="No",
+            LimitCurrent="No",
+            yearly="",
+            daily="",
+            duty="",
+            Tyearly="",
+            Tdaily="",
+            Tduty="",
+            Class="1",
+            UserModel="",
+            UserData="()",
+            debugtrace="NO",
+            VarFollowInverter="No",
+            DutyStart="0",
+            WattPriority="NO",
+            PFPriority="NO",
+            pct_PminNoVars="-1",
+            pct_PminkvarMax="-1",
+            kvarMax="500",
+            kvarMaxAbs="500",
+            spectrum="",
+            basefreq="60",
+            enabled="true",
+            like="",
+    ):
+        super().__init__()
+        self.phases = phases
+        self.bus1 = bus1
+        self.kv = kv
+        self.irradiance = irradiance
+        self.Pmpp = Pmpp
+        self.pct_Pmpp = pct_Pmpp
+        self.Temperature = Temperature
+        self.pf = pf
+        self.conn = conn
+        self.kvar = kvar
+        self.kVA = kVA
+        self.pct_Cutin = pct_Cutin
+        self.pct_Cutout = pct_Cutout
+        self.EffCurve = EffCurve
+        self.P_x_TCurve = P_x_TCurve
+        self.pct_R = pct_R
+        self.pct_X = pct_X
+        self.model = model
+        self.Vminpu = Vminpu
+        self.Vmaxpu = Vmaxpu
+        self.Balanced = Balanced
+        self.LimitCurrent = LimitCurrent
+        self.yearly = yearly
+        self.daily = daily
+        self.duty = duty
+        self.Tyearly = Tyearly
+        self.Tdaily = Tdaily
+        self.Tduty = Tduty
+        self.Class = Class
+        self.UserModel = UserModel
+        self.UserData = UserData
+        self.debugtrace = debugtrace
+        self.VarFollowInverter = VarFollowInverter
+        self.DutyStart = DutyStart
+        self.WattPriority = WattPriority
+        self.PFPriority = PFPriority
+        self.pct_PminNoVars = pct_PminNoVars
+        self.pct_PminkvarMax = pct_PminkvarMax
+        self.kvarMax = kvarMax
+        self.kvarMaxAbs = kvarMaxAbs
+        self.spectrum = spectrum
+        self.basefreq = basefreq
+        self.enabled = enabled
+        self.like = like

@@ -1,0 +1,22 @@
+class Capacitor:
+    bus1 = "capacitor_1"  # type: str
+    bus2 = "capacitor_1.0.0.0"  # type: str
+    phases = "3"  # type: str
+    kvar = "[ 1200]"  # type: str
+    kv = "12.47"  # type: str
+    conn = "wye"  # type: str
+    cmatrix = ""  # type: str
+    cuf = "[ 20.47]"  # type: str
+    R = "[ 0]"  # type: str
+    XL = "[ 0]"  # type: str
+    Harm = "[ 0]"  # type: str
+    Numsteps = "1"  # type: str
+    states = "[ 1]"  # type: str
+    normamps = "75.0046059412345"  # type: str
+    emergamps = "100.006141254979"  # type: str
+    faultrate = "0"  # type: str
+    pctperm = "1E2"  # type: str
+    repair = "3"  # type: str
+    basefreq = "60"  # type: str
+    enabled = "true"  # type: str
+    like = ""  # type: str
